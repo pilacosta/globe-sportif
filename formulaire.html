@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Globe Sportif</title>
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="style/main.css">
+    <link rel="icon" type="image/gif" href="images/logo_icon.gif" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+</head>
+<body>
+<header>
+    <div class="container_form"><!--container pour encadrer l`ìnformation (max-width: 1170px);-->
+        <a href="index.html"><img src="images/logo.png" alt="logo"/></a>
+        <h1>Réservation</h1>
+    </div>
+</header>
+<section id="form_reservation">
+    <!--<div id="entete">-->
+        <!--<img src="images/logo.png" alt="logo Globe Sportif" id="logo"/>-->
+        <!--<h2>Réservation</h2>-->
+    <!--</div>-->
+    <form action="formulaire.html?validation=ok" id="form_resa">
+        <fieldset id="infos_client">
+            <legend>Vos informations</legend>
+
+            <label for="nom">NOM</label>
+            <input type="text" name="nom" id="nom" value=""/>
+
+            <label for="prenom">PRENOM</label>
+            <input type="text" name="prenom" id="prenom" value=""/>
+
+            <label for="mail">COURRIEL</label>
+            <input type="email" name="mail" id="mail" value=""/>
+
+            <label for="phone">TÉLÉPHONE</label>
+            <input type="tel" name="phone" id="phone" value="" placeholder="(XXX) XXX-XXXX"/>
+
+            <label for="adresse">ADRESSE</label>
+            <input type="text" name="adresse" id="adresse" value=""/>
+
+            <label for="code_postal">CODE POSTAL</label>
+            <input type="text" name="cp" id="code_postal" value=""/>
+
+            <label for="ville">VILLE</label>
+            <input type="text" name="ville" id="ville" value=""/>
+        </fieldset>
+
+        <fieldset id="resa_client">
+            <legend>Votre réservation</legend>
+
+            <label for="datepicker">Date de début du forfait</label>
+            <input type="text" name="date_debut" id="datepicker" value=""/>
+
+            <div id="participants">
+            <label for="nb_participants">Nombre de participants</label>
+            <select name="nb_participants" id="nb_participants" class="selector">
+                <option value="un">1</option>
+                <option value="deux">2</option>
+                <option value="trois">3</option>
+                <option value="quatre">4</option>
+                <option value="cinq">5</option>
+                <option value="six">6</option>
+                <option value="sept">7</option>
+                <option value="huit">8</option>
+                <option value="neuf">9</option>
+                <option value="dix">10</option>
+            </select>
+            <!--<input type="number" name="nb_participants" id="nb_participants" value="1" min="1"/>-->
+            </div>
+
+            <div id="animaux">
+                <label for="nb_animaux">Nombre d'animaux</label>
+                <!--<input type="number" name="nb_animaux" id="nb_animaux" value="0" min="0" max="2"/>-->
+                <select name="nb_animaux" id="nb_animaux" class="selector">
+                    <option value="zero">0</option>
+                    <option value="un">1</option>
+                    <option value="deux">2</option>
+                </select>
+            </div>
+        </fieldset>
+
+        <table id="recap">
+            <caption>Résumé</caption>
+            <thead>
+            <tr>
+                <th>Options</th>
+                <th>Quantité</th>
+                <th>Prix unitaire</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td id="nom_forfait">nom forfait</td>
+                <td id="nb_personnes">1</td>
+                <td id="prix_forfait">prix unit</td>
+            </tr>
+            <tr>
+                <td>Animal de compagnie</td>
+                <td id="nb_betes">0</td>
+                <td id="prix_animal">85 $</td>
+            </tr>
+            <tr>
+                <td colspan="2">Total</td>
+                <td id="total"></td>
+            </tr>
+            </tbody>
+        </table>
+
+        <div class="connexion">
+            <input type="submit" value="Réserver" id="reserver" class="bouton_submit"/>
+            <input type="button" value="Annuler" id="annuler" class="bouton_submit"/>
+        </div>
+    </form>
+</section>
+<div class="modal_box_container">
+    <div class="modal_box_background"></div>
+    <div id="confirm_resa">
+        <h3>Merci d'avoir réservé avec Globe Sportif</h3>
+        <p>Votre réservation a bien été enregistée</p>
+        <p>Vous recevrez dans les prochaines minutes un courriel vous donnant le récapitulatif de votre réservation.</p>
+        <p>A bientôt et bonnes vacances sportives !</p>
+        <p><a href="index.html">Retour à la page d'accueil</a></p>
+    </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<script src="script/main.js"></script>
+<script src="script/forfaits.js"></script>
+<script src="script/formulaire.js"></script>
+</body>
+</html>

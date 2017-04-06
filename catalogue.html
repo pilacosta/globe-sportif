@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Globe sportif</title>
+    <link rel="stylesheet" href="style/owl.carousel.css">
+    <link rel="stylesheet" href="style/owl.theme.css">
+    <link rel="stylesheet" href="style/main.css"/>
+    <link rel="icon" type="image/gif" href="images/logo_icon.gif" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+</head>
+<body>
+<!--     ***************************************       HEADER       ************************************    -->
+<header>
+    <div class="container"><!--container pour encadrer l`ìnformation (max-width: 1170px);-->
+        <a href="index.html"><img src="images/logo.png" alt="logo"/></a>
+        <ul class="menu_prin"><!-- Laisser ces commentaires pour supprimer les caractères fins de ligne
+               --><li class="active"><a href="#">Catalogue</a></li><!--
+               --><li><a href="#">Nous joindre</a></li><!--
+               --><li><a href="#">English</a></li>
+        </ul>
+    </div>
+</header>
+<!--     ***************************************       MENU FORFAIT       ************************************    -->
+<section id="sec_menu_forfait">
+    <div class="container">
+        <ul>
+            <li class="menu_surf">
+                <a href="catalogue.html?categorie=Destination%20Surf"> <img src="images/icons_04.png" alt=""/></a>
+                <p><a href="catalogue.html?categorie=Destination%20Surf">Destination Surf</a></p>
+            </li><!--
+            --><li class="menu_plongee">
+            <a href="catalogue.html?categorie=Espaces%20sous-marins"> <img src="images/icons_01.png" alt=""/></a>
+            <p><a href="catalogue.html?categorie=Espaces%20sous-marins">Espaces sous-marins</a></p>
+        </li><!--
+             --><li class="menu_snow">
+            <a href="catalogue.html?categorie=Snow%20attitude"> <img src="images/icons_02.png" alt=""/></a>
+            <p><a href="catalogue.html?categorie=Snow%20attitude">Snow attitude</a></p>
+        </li><!--
+             --><li class="menu_rando">
+            <a href="catalogue.html?categorie=Randonn%C3%A9e%20et%20sac%20%C3%A0%20dos"> <img src="images/icons3.png" alt=""/></a>
+            <p><a href="catalogue.html?categorie=Randonn%C3%A9e%20et%20sac%20%C3%A0%20dos">Randonnée et sac à dos</a></p>
+        </li>
+        </ul>
+    </div>
+</section>
+
+<!--     *************************************     SECTION FORFAITS     *****************************    -->
+<section id="forfaits">
+    <div class="container">
+        <div id="catalogue">
+            <!---->
+
+            <div id="accordion">
+                <h3><a href="?categorie=Destination%20Surf">Destination Surf </a></h3>
+                <div class="accordion-content">
+                    <ul id="dest_surf">
+                    </ul>
+                </div>
+
+                <h3><a href="?categorie=Espaces%20sous-marins">Espaces sous-marins</a></h3>
+                <div class="accordion-content">
+                    <ul id="sous_marins">
+                    </ul>
+                </div><!--/.accordion-content-->
+
+                <h3><a href="?categorie=Snow%20attitude">Snow attitude</a></h3>
+                <div class="accordion-content">
+                    <ul id="snow_attitude">
+                    </ul>
+                </div><!--/.accordion-content-->
+
+                    <h3><a href="?categorie=Randonn%C3%A9e%20et%20sac%20%C3%A0%20dos">Randonnée et sac à dos</a></h3>
+                <div class="accordion-content">
+                    <ul id="randonnee">
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--     ***************************************     PAGE DETAIL - LIGHTBOX     ***********************************    -->
+
+<div id="detail_forfait" class="modal_box_container">
+    <div class="modal_box_background"></div>
+    <div class="page_detail">
+        <div id="informations_forfait">
+            <h2></h2>
+            <div id="owl-demo" class="owl-carousel owl-theme" style="display: inline-block;">
+                <div id="photo1_forfait"></div>
+                <div id="photo2_forfait"></div>
+                <div id="photo3_forfait"></div>
+            </div>
+            <div id="descriptif">
+                <h3></h3>
+                <p>Du <span></span> au <span></span></p>
+                <p>Durée du séjour : <span></span> jours</p>
+                <p>Animaux autorisés : <span></span></p>
+                <p>Nombre de places restantes : <span></span></p>
+                <h4>Prix par personne : <span></span> $</h4>
+                <a href="formulaire.html" id="vers_formulaire">
+                    <button id="bouton_resa">Réservez</button>
+                </a>
+                <a href="catalogue.html" id="bouton_retour">Retour au catalogue</a>
+            </div>
+        </div>
+
+        <div id="onglets">
+            <ul id="liste_onglets">
+                <li><a href="#le_lieu">Le lieu</a></li>
+                <li><a href="#infos_pratiques">Infos pratiques</a></li>
+                <li><a href="#hebergement">Hébergement</a></li>
+                <li><a href="#niveau">Niveau</a></li>
+            </ul>
+            <div id="le_lieu">
+                <p></p>
+            </div>
+            <div id="infos_pratiques">
+                <p></p>
+            </div>
+            <div id="hebergement">
+                <p></p>
+            </div>
+            <div id="niveau">
+                <p></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--     ***************************************     FOOTER PART MENU     ***********************************    -->
+<footer id="footer">
+    <div class="container">
+        <p>Copyright © 2016     Sophie - Pilar    Tous droits réservés.</p>
+        <ul class="menu_prin"><!-- Laisser ces commentaires pour supprimer les caractères fins de ligne
+                --><li class="active"><a href="#">Catalogue</a></li><!--
+                --><li><a href="#">Nous joindre</a></li><!--
+                --><li><a href="#">English</a></li>
+        </ul>
+
+    </div>
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<script src="script/main.js"></script>
+<!--<script src="script/owl.carousel.js"></script>-->
+<script src="script/forfaits.js"></script>
+<script src="script/main_accordeon.js"></script>
+<script src="script/catalogue.js"></script>
+<script src="script/detail.js"></script>
+</body>
+</html>
